@@ -1,0 +1,14 @@
+@use "utilities/global" as *;
+
+@include setup;
+
+body {
+  font-family: $font-rubik;
+  background-color: color(very-dark-blue);
+  color: white;
+  padding: rem(81px) rem(24px);
+}
+
+#root {
+  width: 100%;
+}

@@ -1,4 +1,8 @@
 .attribution {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 11px;
   text-align: center;
 }

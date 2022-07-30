@@ -1,0 +1,55 @@
+@use "../utilities/global" as *;
+
+.user_card {
+  border-radius: 15px;
+  background-color: color(dark-blue);
+  overflow: hidden;
+}
+
+.user {
+  background-color: color(blue);
+  padding-left: rem(32px);
+  padding-top: rem(34px);
+  padding-bottom: rem(35px);
+  display: flex;
+  align-items: center;
+  gap: rem(17px);
+  border-radius: 15px;
+}
+
+.profile_pic {
+  width: rem(64px);
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+
+.report {
+  @include setFont(rem(15px), 18px, 400);
+  color: color(pale-blue);
+  margin-bottom: em(4px, 15px);
+}
+
+.user_name {
+  @include setFont(rem(24px), 28px, 300);
+}
+
+.timeframes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: rem(24px);
+  padding-bottom: rem(25px);
+  @include setFont(rem(18px), 21px, 400);
+  color: color(pale-blue);
+  span {
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+}
+
+.active {
+  color: white;
+}

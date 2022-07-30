@@ -1,0 +1,11 @@
+@use "../utilities/global" as *;
+
+.ellipsis {
+  justify-self: flex-end;
+  cursor: pointer;
+  color: color(pale-blue);
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}

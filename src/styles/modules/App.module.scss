@@ -1,0 +1,8 @@
+@use "../utilities/global" as *;
+
+.main {
+  display: grid;
+  //adjust for automatic sizing
+  grid-template-rows: 203px repeat(6, 160px);
+  row-gap: rem(24px);
+}
