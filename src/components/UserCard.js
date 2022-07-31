@@ -8,7 +8,7 @@ function UserCard({ timeframe, changeTimeframe }) {
         <img src={profilePic} alt="user" className={scss.profile_pic} />
         <div>
           <div className={scss.report}>Report for</div>
-          <div className={scss.user_name}>Jeremy Robson</div>
+          <h1 className={scss.user_name}>Jeremy Robson</h1>
         </div>
       </div>
       <div className={scss.timeframes}>

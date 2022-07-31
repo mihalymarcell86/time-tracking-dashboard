@@ -14,7 +14,7 @@ function Attribution() {
       . Coded by{" "}
       <a
         href="https://www.github.com/mihalymarcell86"
-        target="_black"
+        target="_blank"
         rel="noreferrer"
       >
         Marcell Mihály
