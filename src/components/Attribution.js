@@ -1,4 +1,4 @@
-import scss from "../styles/Attribution.module.scss";
+import scss from "../styles/modules/Attribution.module.scss";
 
 function Attribution() {
   return (

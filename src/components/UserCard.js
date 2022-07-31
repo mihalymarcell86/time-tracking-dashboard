@@ -1,7 +1,7 @@
 import profilePic from "../images/image-jeremy.png";
 import scss from "../styles/modules/UserCard.module.scss";
 
-function UserCard(props) {
+function UserCard({ timeframe, changeTimeframe }) {
   return (
     <div className={scss.user_card}>
       <div className={scss.user}>
@@ -12,9 +12,24 @@ function UserCard(props) {
         </div>
       </div>
       <div className={scss.timeframes}>
-        <span>Daily</span>
-        <span className={scss.active}>Weekly</span>
-        <span>Monthly</span>
+        <span
+          className={timeframe === "daily" ? scss.active : ""}
+          onClick={() => changeTimeframe("daily")}
+        >
+          Daily
+        </span>
+        <span
+          className={timeframe === "weekly" ? scss.active : ""}
+          onClick={() => changeTimeframe("weekly")}
+        >
+          Weekly
+        </span>
+        <span
+          className={timeframe === "monthly" ? scss.active : ""}
+          onClick={() => changeTimeframe("monthly")}
+        >
+          Monthly
+        </span>
       </div>
     </div>
   );

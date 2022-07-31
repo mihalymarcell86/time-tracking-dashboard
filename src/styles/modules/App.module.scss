@@ -6,6 +6,7 @@
   row-gap: rem(24px);
   max-width: rem(500px);
   width: 100%;
+  z-index: 2;
   @media (min-width: $breakpoint) {
     grid-template: repeat(2, min-content) / repeat(4, 1fr);
     gap: rem(30px);
