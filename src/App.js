@@ -3,6 +3,7 @@ import data from "./data/data.json";
 import UserCard from "./components/UserCard";
 import ReportCard from "./components/ReportCard";
 // import Attribution from "./components/Attribution";
+//TODO: move JSON import into ReportCard component
 
 import scss from "./styles/modules/App.module.scss";
 

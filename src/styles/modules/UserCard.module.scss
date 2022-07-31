@@ -4,6 +4,9 @@
   border-radius: 15px;
   background-color: color(dark-blue);
   overflow: hidden;
+  @media (min-width: $breakpoint) {
+    grid-row: 1 / 3;
+  }
 }
 
 .user {
@@ -15,6 +18,14 @@
   align-items: center;
   gap: rem(17px);
   border-radius: 15px;
+  @media (min-width: $breakpoint) {
+    flex-direction: column;
+    padding-top: rem(37px);
+    padding-left: rem(32px);
+    padding-bottom: rem(80px);
+    align-items: flex-start;
+    gap: rem(40px);
+  }
 }
 
 .profile_pic {
@@ -22,16 +33,26 @@
   object-fit: cover;
   border: 3px solid white;
   border-radius: 100%;
+  @media (min-width: $breakpoint) {
+    width: rem(78px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .report {
   @include setFont(rem(15px), 18px, 400);
   color: color(pale-blue);
   margin-bottom: em(4px, 15px);
+  @media (min-width: $breakpoint) {
+    margin-bottom: em(3px, 15px);
+  }
 }
 
 .user_name {
   @include setFont(rem(24px), 28px, 300);
+  @media (min-width: $breakpoint) {
+    @include setFont(rem(40px), 47px);
+  }
 }
 
 .timeframes {
@@ -47,6 +68,13 @@
     &:focus {
       color: white;
     }
+  }
+  @media (min-width: $breakpoint) {
+    flex-direction: column;
+    padding-top: rem(26px);
+    padding-left: rem(32px);
+    padding-bottom: rem(32px);
+    gap: rem(21px);
   }
 }
 

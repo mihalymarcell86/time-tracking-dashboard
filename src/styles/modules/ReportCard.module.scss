@@ -4,21 +4,49 @@
   border-radius: 15px;
   padding-top: rem(38px);
   overflow: hidden;
+  width: 100%;
+  position: relative;
+  @media (min-width: $breakpoint) {
+    padding-top: rem(45px);
+  }
 }
 
 .stats {
   background-color: color(dark-blue);
-  display: grid;
-  grid-template: repeat(2, min-content) / repeat(2, 1fr);
-  grid-auto-flow: column;
-  row-gap: rem(7px);
-  justify-content: space-between;
-  align-items: center;
   padding-block: rem(28px);
   padding-inline: rem(24px);
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   &:hover {
-    background-color: hsla(236, 41%, 34%, 1);
+    background-color: color(desaturated-blue);
+  }
+  @media (min-width: $breakpoint) {
+    padding-top: rem(29px);
+    padding-bottom: rem(32px);
+    padding-inline: rem(30px);
+  }
+}
+
+.top_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(6px);
+  @media (min-width: $breakpoint) {
+    margin-bottom: rem(24px);
+  }
+}
+
+.bottom_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $breakpoint) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(8px);
   }
 }
 
@@ -28,12 +56,14 @@
 
 .time {
   @include setFont(rem(32px), 38px, 300);
+  @media (min-width: $breakpoint) {
+    @include setFont(rem(56px), 66px);
+  }
 }
 
 .previous_time_frame {
   @include setFont(rem(15px), 18px, 400);
   color: color(pale-blue);
-  justify-self: flex-end;
 }
 
 .work {

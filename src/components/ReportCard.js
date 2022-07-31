@@ -7,14 +7,18 @@ function ReportCard({ data }) {
   return (
     <div className={`${scss.card} ${scss[title]}`}>
       <div className={scss.stats}>
-        <div className={scss.activity}>{data.title}</div>
-        <div
-          className={scss.time}
-        >{`${data.timeframes.weekly.current}hrs`}</div>
-        <IconEllipsis />
-        <div
-          className={scss.previous_time_frame}
-        >{`Last Week - ${data.timeframes.weekly.previous}hrs`}</div>
+        <div className={scss.top_row}>
+          <div className={scss.activity}>{data.title}</div>
+          <IconEllipsis />
+        </div>
+        <div className={scss.bottom_row}>
+          <div
+            className={scss.time}
+          >{`${data.timeframes.weekly.current}hrs`}</div>
+          <div
+            className={scss.previous_time_frame}
+          >{`Last Week - ${data.timeframes.weekly.previous}hrs`}</div>
+        </div>
       </div>
     </div>
   );
